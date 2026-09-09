@@ -1,0 +1,81 @@
+fitplan-ai/
+│
+├── public/
+│   ├── logo.svg
+│   ├── favicon.ico
+│   └── images/
+│
+├── src/
+│   │
+│   ├── app/
+│   │   ├── App.tsx
+│   │   ├── router.tsx
+│   │   └── providers.tsx
+│   │
+│   ├── assets/
+│   │   ├── images/
+│   │   └── icons/
+│   │
+│   ├── components/
+│   │   ├── ui/
+│   │   ├── layout/
+│   │   ├── charts/
+│   │   ├── forms/
+│   │   └── common/
+│   │
+│   ├── features/
+│   │   │
+│   │   ├── auth/
+│   │   ├── onboarding/
+│   │   ├── profile/
+│   │   ├── mealPlans/
+│   │   ├── workouts/
+│   │   ├── grocery/
+│   │   ├── progress/
+│   │   ├── ratings/
+│   │   └── admin/
+│   │
+│   ├── pages/
+│   │   ├── auth/
+│   │   ├── user/
+│   │   └── admin/
+│   │
+│   ├── store/
+│   │   ├── index.ts
+│   │   └── slices/
+│   │
+│   ├── services/
+│   │   ├── supabase.ts
+│   │   └── api.ts
+│   │
+│   ├── hooks/
+│   │
+│   ├── lib/
+│   │   ├── calculations/
+│   │   ├── validations/
+│   │   └── utils/
+│   │
+│   ├── types/
+│   │   ├── database.ts
+│   │   ├── meal.ts
+│   │   ├── workout.ts
+│   │   └── user.ts
+│   │
+│   ├── constants/
+│   │
+│   ├── styles/
+│   │
+│   └── main.tsx
+│
+├── supabase/
+│   ├── migrations/
+│   ├── seed.sql
+│   └── functions/
+│       └── generate-plan/
+│           └── index.ts
+│
+├── .env
+├── .env.example
+├── package.json
+├── tsconfig.json
+└── vite.config.ts

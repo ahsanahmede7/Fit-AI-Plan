@@ -1,0 +1,322 @@
+
+.dashboard-sidebar {
+  position: fixed;
+
+  left: 0;
+  top: 0;
+  bottom: 0;
+
+  width: 245px;
+
+  padding: 30px 18px;
+
+  background: #ffffff;
+
+  border-right: 1px solid #eeeaf5;
+
+  display: flex;
+  flex-direction: column;
+
+  z-index: 1000;
+}
+
+
+/* ========================================
+   BRAND
+======================================== */
+
+.dashboard-brand {
+  display: flex;
+
+  align-items: center;
+
+  gap: 9px;
+
+  padding-left: 10px;
+
+  margin-bottom: 48px;
+}
+
+.dashboard-brand-icon {
+  width: 34px;
+  height: 25px;
+
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+
+  border: 4px solid #7040e8;
+
+  border-radius: 50%;
+
+  color: #7040e8;
+
+  font-size: 19px;
+
+  font-weight: 900;
+
+  transform: scaleX(1.2);
+}
+
+.dashboard-brand-icon span {
+  transform: scaleX(0.8);
+}
+
+.dashboard-brand-name {
+  font-size: 21px;
+
+  font-weight: 800;
+
+  color: #101323;
+}
+
+.dashboard-brand-name span {
+  color: #7040e8;
+}
+
+
+/* ========================================
+   NAVIGATION
+======================================== */
+
+.dashboard-nav {
+  display: flex;
+
+  flex-direction: column;
+
+  gap: 7px;
+}
+
+.dashboard-nav-item {
+  height: 48px;
+
+  display: flex;
+
+  align-items: center;
+
+  gap: 13px;
+
+  padding: 0 15px;
+
+  border-radius: 10px;
+
+  color: #646b80;
+
+  font-size: 13px;
+
+  font-weight: 600;
+
+  text-decoration: none;
+
+  transition: all 0.2s ease;
+}
+
+
+/* HOVER */
+
+.dashboard-nav-item:hover {
+  color: #7040e8;
+
+  background: #f7f4ff;
+}
+
+
+/* ========================================
+   ACTIVE PAGE
+======================================== */
+
+.dashboard-nav-item.active {
+  color: #7040e8;
+
+  background: #f0eaff;
+
+  font-weight: 700;
+}
+
+
+/* ========================================
+   ICON
+======================================== */
+
+.nav-icon {
+  width: 23px;
+
+  text-align: center;
+
+  font-size: 17px;
+
+  flex-shrink: 0;
+}
+
+
+/* ========================================
+   SIDEBAR BOTTOM
+======================================== */
+
+.dashboard-sidebar-bottom {
+  margin-top: auto;
+
+  display: flex;
+
+  flex-direction: column;
+
+  gap: 6px;
+}
+
+.dashboard-bottom-link {
+  width: 100%;
+
+  display: flex;
+
+  align-items: center;
+
+  gap: 13px;
+
+  padding: 12px 15px;
+
+  border: none;
+
+  background: transparent;
+
+  color: #687087;
+
+  font-size: 13px;
+
+  border-radius: 9px;
+
+  text-decoration: none;
+
+  cursor: pointer;
+
+  transition: all 0.2s ease;
+}
+
+
+/* HOVER */
+
+.dashboard-bottom-link:hover {
+  background: #f7f4ff;
+
+  color: #7040e8;
+}
+
+
+/* SETTINGS ACTIVE */
+
+.dashboard-bottom-link.active {
+  background: #f0eaff;
+
+  color: #7040e8;
+
+  font-weight: 700;
+}
+
+.dashboard-bottom-link span {
+  width: 23px;
+
+  text-align: center;
+}
+
+
+/* ========================================
+   MAIN CONTENT
+======================================== */
+
+/*
+  Sidebar 245px hai.
+  Isliye Dashboard / Workout / Meal Plan
+  ke main content ko 245px left se start
+  karna hoga.
+*/
+
+.dashboard-main {
+  min-height: 100vh;
+
+  margin-left: 245px;
+}
+
+
+/* ========================================
+   RESPONSIVE
+======================================== */
+
+@media (max-width: 1200px) {
+
+  .dashboard-sidebar {
+    width: 220px;
+  }
+
+  .dashboard-main {
+    margin-left: 220px;
+  }
+}
+
+
+@media (max-width: 950px) {
+
+  .dashboard-sidebar {
+    width: 75px;
+
+    padding: 25px 10px;
+  }
+
+  .dashboard-brand {
+    justify-content: center;
+
+    padding: 0;
+  }
+
+  .dashboard-brand-name {
+    display: none;
+  }
+
+  .dashboard-nav-item {
+    justify-content: center;
+
+    padding: 0;
+
+    font-size: 0;
+  }
+
+  .nav-icon {
+    font-size: 18px;
+  }
+
+  .dashboard-bottom-link {
+    justify-content: center;
+
+    padding: 12px 0;
+
+    font-size: 0;
+  }
+
+  .dashboard-bottom-link span {
+    font-size: 17px;
+  }
+
+  .dashboard-main {
+    margin-left: 75px;
+  }
+}
+
+
+@media (max-width: 450px) {
+
+  .dashboard-sidebar {
+    width: 62px;
+
+    padding: 20px 7px;
+  }
+
+  .dashboard-main {
+    margin-left: 62px;
+  }
+
+  .dashboard-brand-icon {
+    width: 28px;
+    height: 21px;
+
+    border-width: 3px;
+  }
+}
