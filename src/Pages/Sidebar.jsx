@@ -1,6 +1,6 @@
 import React from "react";
 import { NavLink, useNavigate } from "react-router-dom";
-import "./Sidebar.css";
+import "./SIdebar.css";
 import { Logout } from "../tanstack/APIcall.js";
 
 function Sidebar() {
