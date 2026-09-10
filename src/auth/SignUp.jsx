@@ -512,7 +512,7 @@ function Signup() {
 
               {/* Divider */}
 
-              <div className="signup-divider">
+              {/* <div className="signup-divider">
 
                 <span></span>
 
@@ -522,12 +522,12 @@ function Signup() {
 
                 <span></span>
 
-              </div>
+              </div> */}
 
 
               {/* Social Buttons */}
 
-              <div className="signup-social-buttons">
+              {/* <div className="signup-social-buttons">
 
                 <button
                   type="button"
@@ -556,7 +556,7 @@ function Signup() {
 
                 </button>
 
-              </div>
+              </div> */}
 
 
               {/* Login */}
